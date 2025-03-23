@@ -1,6 +1,7 @@
 package spring.security.basic.demo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -11,6 +12,7 @@ import spring.security.basic.demo.repository.UserRepository;
 
 import java.util.Collections;
 
+@Configuration
 public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired
